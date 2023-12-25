@@ -1,0 +1,16 @@
+.video,audio,
+.truck{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.basic{
+    text-align: center;
+}
+.table{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
