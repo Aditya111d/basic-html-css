@@ -4,10 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact-page</title>
-
 </head>
 <body>
-    <a href="my_website.html" style="margin-left: 10px;">Home</a>
+    <header>
+        <p style="margin-bottom: 100 px;"><a href="my_website.html" style="margin-left: 10px;">Home</a></p>
+    </header>
+    <main>
+        <div>
+        <form action="action.php" method="post">
+            
+            <label for="username">username:</label>
+            <input type="text" id="username" required placeholder="yourname" minlength="6" maxlength="16"><br>
+            <label for="password">password:</label>
+            <input type="password" id="password" required minlength="6" maxlength="16"><br>
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="youremail@gmail.com"><br>
+            <label for="phone_number">phone#:</label>
+            <input type="tel" id="phone_number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <label for="birth_date">birth_date:</label>
+            <input type="date" id="birth_date"><br>
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" min="1" max="10" value="1"><br>
+            
+            <!--Radio buttons :-->
+            <label for="title">title:</label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" name="title" id="Mr." value="Mr.">
+            <label for="Mis.">Mis.</label>
+            <input type="radio" name="title" id="Mis." value="Mis.">
+            <label for="Phd.">Phd.</label>
+            <input type="radio" name="title" id="Phd." value="Phd."><br>
+            <!--End Radio-->
+
+            <!--Drop-down Menu:-->
+            <label for="payment">payment:</label>
+            <select id="payment">
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="GiftCard">GiftCard</option>
+            </select><br>
+            <!--End Drop-down Menu-->
+
+            <!--Checkbox:-->
+            <label for="subscribe">Subscribe</label>
+            <input type="checkbox" id="subscribe"><br>
+            <!--End Checkbox-->
+
+            <!--Comment/textbox:-->
+            <label for="Comment">Comment:</label>
+            <textarea id="Comment" cols="30" rows="10"></textarea><br>
+            <!--End Comment/textbox:-->
+
+            <!--File submission:-->
+            <label for="files">File:</label>
+            <input type="file" id="files" accept="image/png, image/jpeg"><br>
+            <!--End File submission:-->
+            
+            <!--Submit/Reset:-->
+            <input type="submit">
+            <input type="reset">
+            <!--End Submit/Reset:-->
+
+
+
+        </form>
+        </div>
+    </main>
+
     
 </body>
 </html>
